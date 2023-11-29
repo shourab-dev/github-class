@@ -1,0 +1,93 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+/** COMMON CSS STARTS HERE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+span,
+ol {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "arial";
+}
+
+/** COMMON CSS ENDS HERE */
+
+#events {
+  margin: 50px 0;
+}
+#events .card {
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.date {
+  background-color: #111;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  max-width: 100px;
+  
+}
+
+@media (320px <= width <= 575px) {
+    .date{
+        margin: auto;
+    }
+}
+
+.myBtn {
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+
+
+#register{
+  margin: 50px 0 ;
+}
+
+.registerCard{
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}

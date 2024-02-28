@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytor change</title>
+    <!-- *CSS  -->
+    <!-- * FONT AWESOME  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- * BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- * MAIN CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- *CSS ENDS -->
+</head>
+<body>
+    
+    <!-- *NAVBAR STARTS -->
+    <header>
+        <!-- * DESKTOP NAVBAR -->
+        <nav class="navbar navbar-expand-lg d-none d-lg-block">
+            <div class="container">
+                <!-- * LOGO -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/LOGO.png" height="64px" alt="">
+                </a>
+                <!-- * LOGO ENDS -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="desktopMenu">
+                    <!-- * DESKTOP MENU -->
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Features <span class="dropDownArrow"><i class="fa-solid fa-angle-down"></i></span></a>
+
+                            <!-- *SUBMENU -->
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Feature 1</a></li>
+                                    <li><a href="#">Feature 2</a></li>
+                                    <li><a href="#">Feature 3</a></li>
+                                    <li><a href="#">Feature 4</a></li>
+                                </ul>
+                            </div>
+                            <!-- *SUBMENU ENDS -->
+
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Contact</a>
+                        </li>
+                        
+                    </ul>
+                    <!-- * DESKTOP MENU  END-->
+                  
+                </div>
+
+                <!-- *LINKS -->
+                <div class="links">
+                    <ul class="d-flex">
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span class="cartCounter">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- *LINKS END -->
+
+            </div>
+        </nav>
+        <!-- * DESKTOP NAVBAR ENDS -->
+
+        <!-- * SMALL NAVBAR -->
+        <nav class="smNavbar d-block d-lg-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <button data-bs-toggle="offcanvas" data-bs-target="#smallMenu" class="menuBtnToggler"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <div class="col-7 text-center">
+                        <a href="#"><img height="50" src="./images/LOGO.png" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <div class="links">
+                            <ul class="d-flex justify-content-end">
+                                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                               
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <span class="cartCounter">0</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- * SMALL NAVBAR ENDS -->
+        <!-- *OFFCANVAS MENU -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="smallMenu" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <a href="#"><img height="30" src="./images/LOGO.png" alt=""></a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body px-0">
+                <ul class="smallMenuLink">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">Pages</a>
+                    </li>
+                    <li>
+                        <a href="#" role="button" data-bs-toggle="dropdown">Features</a>
+                        <ul class="dropdown-menu submenuSmall">
+                            <li><a class="dropdown-item" href="#">Featured 1</a></li>
+                            <li><a class="dropdown-item" href="#">Featured 1</a></li>
+                            <li><a class="dropdown-item" href="#">Featured 1</a></li>
+                            <li><a class="dropdown-item" href="#">Featured 1</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- *OFFCANVAS MENU END -->
+
+
+    </header>
+    <!-- *NAVBAR ENDS -->
+
+
+    <!-- *JS STARTS -->
+    <!-- *JQUERY -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- *BOOTSTRAP JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- *MAIN JS -->
+    <script src="./js/app.js"></script>
+    <!-- *JS ENDS -->
+</body>
+</html>
+
+
+
+
+

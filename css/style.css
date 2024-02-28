@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto&display=swap");
+
+/** COMMON CSS STARTS HERE */
+
+:root {
+  --primaryFont: "Josefin Sans", sans-serif;
+  --secondaryFont: "Roboto", sans-serif;
+  --text-color: #11161e;
+  --darkBlue: #151a32;
+  --comon-colot: #fff;
+  --primaryColor: #ff6f61;
+  --paragraph-color: #444;
+  --primaryColorDark: #ff5645;
+  --background-color: #f1f1f1;
+  --bg: #f1f3f4;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+span,
+ol {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--primaryFont);
+}
+
+/** COMMON CSS ENDS HERE */
+
+/* *NAVBAR STARTS HERE */
+#desktopMenu ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text-color);
+  padding: 37px 21px 40px;
+  display: block;
+}
+
+#desktopMenu ul li:hover > a {
+    color: var(--primaryColor);
+}
+
+#desktopMenu ul li{
+    position: relative;
+}
+#desktopMenu ul li .submenu{
+    position: absolute;
+    border: 1px solid #ddd;
+    width: 300px;
+    margin-top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+#desktopMenu ul li .submenu li a{
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+#desktopMenu ul li:hover > .submenu{
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+header nav .links li a{
+    color: var(--darkBlue);
+    font-size: 18px;
+    position: relative;
+    margin-right: 20px;
+}
+
+header nav .links li a span.cartCounter{
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: var(--primaryColor);
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: -2px;
+    right: -8px;
+}
+/* *SMALL NAVBAR */
+.smNavbar{
+    padding: 15px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.smNavbar .menuBtnToggler{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+header  .smallMenuLink li a{
+    border-bottom:1px solid #ccc ;
+    display: block;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: var(--text-color);
+}
+header  .smallMenuLink li:hover > a{
+    color: var(--primaryColor);
+}
+
+
+header  .smallMenuLink li:last-child a{
+    border: none;
+}
+
+header .submenuSmall{
+    position: relative !important;
+    inset: auto !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+}
+
+/* *NAVBAR ENDS HERE */
